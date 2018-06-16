@@ -10,7 +10,7 @@ admin.initializeApp({
     databaseURL: "https://ezzysalon-ec3ce.firebaseio.com"
 });
 
-var port = process.env.PORT || 4000;
+var port = process.env.PORT || 9011;
 
 app.post('/notifications',function(req,res){
     var registrationToken = 'eUtM6C9mVnE:APA91bFuFgfKxHrVljAg4Djf_ORovl2SJNsCcfi46QhbuvCR-Rx5HT5zcxaEMPJDgC3Bckc7MMPuHHD5LI6sr7rk-m4frNkV9S-kAWBuDp7zoC0BpoLWZkgeORpFvRiM77KObQbA5Lfp';
@@ -40,5 +40,5 @@ app.post('/notifications',function(req,res){
 });
 
 app.listen(port);	
-console.log('App is Running On Port : ' + port); 
+console.log('fcm-server Running On Port : ' + port); 
 exports = module.exports = app; 
